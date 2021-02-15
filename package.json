@@ -1,0 +1,41 @@
+{
+  "name": "duh",
+  "version": "0.0.1",
+  "description": "A minimalist CSS framework.",
+  "homepage": "https://github.com/LiuToki/Duh#readme",
+  "main": "dist/duh.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiuToki/Duh.git"
+  },
+  "author": "LiuToki",
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "css3",
+    "flexbox",
+    "front-end",
+    "framework",
+    "html",
+    "html5",
+    "sass",
+    "scss"
+  ],
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-postcss": "^9.0.0",
+    "postcss-css-variables": "^0.17.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch",
+    "serve": "browser-sync start --no-notify -s test --ss dist -f dist"
+  },
+  "bugs": {
+    "url": "https://github.com/LiuToki/Duh/issues"
+  }
+}
