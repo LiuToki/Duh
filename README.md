@@ -1,2 +1,2 @@
-# Duh
+# Duh 🍠
 Duh!
