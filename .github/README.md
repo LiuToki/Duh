@@ -9,10 +9,21 @@ Let's break away from the huge amount of web pages!
 
 # Getting Started
 ## NPM
+Add to compilerOptions code block in package.json
 ```
-
+"dependencies": {
+	"@liutoki/Duh": "github:LiuToki/Duh"
+}
 ```
 ## CSS3
+```
+<link rel="stylesheet" href="https://github.com/LiuToki/Duh/blob/master/dist/duh.css" />
+```
+
+Maybe...Maybe...
+
+## Download
+https://github.com/LiuToki/Duh/archive/master.zip
 
 
 # License
