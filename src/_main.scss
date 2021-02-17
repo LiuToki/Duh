@@ -100,7 +100,7 @@ input[type='submit'] {
 			border-color: $color-primary-light;
 			color: $color-primary-light;
 		}
-	
+
 		&[disabled] {
 			&:focus,
 			&:hover {
@@ -121,7 +121,7 @@ input[type='submit'] {
 		  border-color: transparent;
 		  color: $color-primary-light;
 		}
-	
+
 		&[disabled] {
 			&:focus,
 			&:hover {
@@ -196,7 +196,7 @@ nav {
 		font-size: 16px;
 		background-color: rgba(255,255,255,1);
 
-		ul li {	
+		ul li {
 			list-style: none;
 			margin: 0 auto;
 			display: inline-block;
@@ -259,7 +259,7 @@ nav {
 		}
 	}
 }
-  
+
 ul li ul li a { transition: all 0.5s ease; }
 
 // Grid
@@ -308,7 +308,7 @@ ul li ul li a { transition: all 0.5s ease; }
 // Link
 // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-a {  
+a {
 	text-decoration: none;
 }
 
@@ -400,4 +400,3 @@ h6 {
   letter-spacing: 0;
   line-height: 1.4;
 }
-	
