@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="LiuToki" />
+		<meta
+		name="description"
+		content="Duh is a lightweight CSS framework for static sites. It is recommended to use it to build a site that basically does not depend on javascript."
+		/>
+		<title>Duh 🍠</title>
+		<link rel="stylesheet" href="../dist/duh.css" />
+		<style>
+		.example-grid .row {
+			/*stolen from skeleton for the time being*/
+			text-align: center;
+			font-size: .8em;
+			letter-spacing: .1rem;
+			margin: .8em 0;
+		}
+
+		.example-grid .col {
+			background: #EEE;
+			padding: .3em;
+		}
+		</style>
+		<!-- to generate this style run `$ npm start` -->
+	</head>
+	<body>
+		<main>
+			<section class="c">
+				<h1>Duh 🍠</h1>
+			</section>
+
+			<br>
+
+			<section class="c">
+				<h2>Links</h2>
+				<nav role="navigation" class="p-nav">
+					<ul>
+						<li><a href="#typpography">Typography</a></li>
+						<li><a href="#container">Container</a></li>
+						<li><a href="#blockquotes">Blockquotes</a></li>
+						<li><a href="#buttons">Buttons</a></li>
+						<li><a href="#lists">Lists</a></li>
+						<li><a href="#navbar">Navbar</a></li>
+						<li><a href="#tables">Tables</a></li>
+						<li><a href="#grid">Grid</a></li>
+						<li><a href="#code">Code</a></li>
+						<li><a href="#cards">Cards</a></li>
+						<li><a href="#other">Other</a></li>
+					</ul>
+				</nav>
+				<p>This website was built using nothing but lit, and a few custom lines of css to color the background of the grid example.</p>
+			</section>
+
+			<br>
+
+			<section class="c" id="typography">
+				<h4 class="title">Typography</h5>
+				<div class="example">
+					<div class="row">
+						<h1>
+							Heading<span> <code>&lt;h1&gt;</code> 4.6rem (46px)</span>
+						</h1>
+						<h2>
+							Heading<span> <code>&lt;h2&gt;</code> 3.6rem (36px)</span>
+						</h2>
+						<h3>
+							Heading<span> <code>&lt;h3&gt;</code> 2.8rem (28px)</span>
+						</h3>
+						<h4>
+							Heading<span> <code>&lt;h4&gt;</code> 2.2rem (22px)</span>
+						</h4>
+						<h5>
+							Heading<span> <code>&lt;h5&gt;</code> 1.8rem (18px)</span>
+						</h5>
+						<h6>
+							Heading<span> <code>&lt;h6&gt;</code> 1.6rem (16px)</span>
+						</h6>
+					</div>
+				</div>
+				<pre><code>
+&lt;h1&gt;
+	Heading&lt;span&gt; &lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; 4.6rem (46px)&lt;/span&gt;
+&lt;/h1&gt;
+&lt;h2&gt;
+	Heading&lt;span&gt; &lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; 3.6rem (36px)&lt;/span&gt;
+&lt;/h2&gt;
+&lt;h3&gt;
+	Heading&lt;span&gt; &lt;code&gt;&amp;lt;h3&amp;gt;&lt;/code&gt; 2.8rem (28px)&lt;/span&gt;
+&lt;/h3&gt;
+&lt;h4&gt;
+	Heading&lt;span&gt; &lt;code&gt;&amp;lt;h4&amp;gt;&lt;/code&gt; 2.2rem (22px)&lt;/span&gt;
+&lt;/h4&gt;
+&lt;h5&gt;
+	Heading&lt;span&gt; &lt;code&gt;&amp;lt;h5&amp;gt;&lt;/code&gt; 1.8rem (18px)&lt;/span&gt;
+&lt;/h5&gt;
+&lt;h6&gt;
+	Heading&lt;span&gt; &lt;code&gt;&amp;lt;h6&amp;gt;&lt;/code&gt; 1.6rem (16px)&lt;/span&gt;
+&lt;/h6&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="container">
+				<h4 class="title">Container</h4>
+				<p>Containers add margin to the sides of your content and center it. This website has one main container that wraps everything.</p>
+				<div class="c">
+					Container Example
+				</div>
+				<pre><code>
+&lt;div class="c"&gt;
+	Container Example
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<section class="c" id="blockquotes">
+				<h4 class="title">Blockquotes</h5>
+				<div class="example">
+					<div class="row">
+						<p><q>I use Duh. Duh!</q></p>
+						<blockquote>
+							<p><em>I use Duh. Duh!</em></p>
+						</blockquote>
+					</div>
+				</div>
+				<pre><code>
+&lt;blockquote&gt;
+	&lt;p&gt;&lt;em&gt;I use Duh. Duh!&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="buttons">
+				<h4 class="title">Buttons</h5>
+
+				<div class="example">
+					Following is normal buttons.
+					<div class="row">
+						<div class="column">
+							<a class="button" href="#buttons">link</a>
+						</div>
+						<div class="column">
+							<button class="button button-outline">button</button>
+						</div>
+						<div class="column">
+							<input
+							class="button button-clear"
+							type="submit"
+							value="input"
+							/>
+						</div>
+					</div>
+
+					Following is disabled buttons.
+					<div class="row">
+					<div class="column">
+						<a
+						class="button"
+						disabled
+						href="#buttons"
+						>disabled link</a
+						>
+					</div>
+					<div class="column">
+						<button class="button button-outline" disabled>
+							disabled button
+						</button>
+					</div>
+					<div class="column">
+						<input
+						class="button button-clear"
+						disabled
+						type="submit"
+						value="disabled input"
+						/>
+					</div>
+					</div>
+				</div>
+				<pre><code>
+&lt;a class="button" href="#buttons"&gt;link&lt;/a&gt;
+&lt;button class="button button-outline"&gt;button&lt;/button&gt;
+&lt;input class="button button-clear" type="submit" value="input"/&gt;
+
+&lt;a class="button" disabled href="#buttons"&gt;disabled link&lt;/a&gt;
+&lt;button class="button button-outline" disabled&gt;disabled button&lt;/button&gt;
+&lt;input class="button button-clear" disabled type="submit" value="disabled input"/&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="lists">
+				<h4 class="title">Lists</h5>
+				Lists is so simple.
+				<div class="example">
+					<div class="row">
+						<div class="column">
+							<ul>
+								<li>Unordered list item 1</li>
+								<li>
+									Unordered list item 2
+									<ul>
+									<li>Unordered list item 2.1</li>
+									<li>Unordered list item 2.2</li>
+									</ul>
+								</li>
+								<li>Unordered list item 3</li>
+							</ul>
+						</div>
+						<div class="column">
+							<ol>
+								<li>Ordered list item 1</li>
+								<li>
+									Ordered list item 2
+									<ol>
+									<li>Ordered list item 2.1</li>
+									<li>Ordered list item 2.2</li>
+									</ol>
+								</li>
+								<li>Ordered list item 3</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+				<pre><code>
+&lt;ul&gt;
+	&lt;li&gt;Unordered list item 1&lt;/li&gt;
+	&lt;li&gt;
+		Unordered list item 2
+		&lt;ul&gt;
+		&lt;li&gt;Unordered list item 2.1&lt;/li&gt;
+		&lt;li&gt;Unordered list item 2.2&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Unordered list item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Ordered list item 1&lt;/li&gt;
+	&lt;li&gt;
+		Ordered list item 2
+		&lt;ol&gt;
+		&lt;li&gt;Ordered list item 2.1&lt;/li&gt;
+		&lt;li&gt;Ordered list item 2.2&lt;/li&gt;
+		&lt;/ol&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Ordered list item 3&lt;/li&gt;
+&lt;/ol&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="navbar">
+				<h4 class="title">Navbar</h5>
+				I love this novbar. ok?
+				<nav role="navigation" class="p-nav">
+					<ul>
+						<li><a href="#navbar">Home</a></li>
+						<li><a href="#navbar">Work &dtrif;</a>
+						<ul>
+							<li><a href="#navbar">Web Development</a></li>
+							<li><a href="#navbar">Web Design</a></li>
+							<li><a href="#navbar">Illustration</a></li>
+							<li><a href="#navbar">Iconography</a></li>
+						</ul>
+						</li>
+						<li><a href="#navbar">About</a></li>
+						<li><a href="#navbar">Contact</a></li>
+					</ul>
+				</nav>
+				<pre><code>
+&lt;nav role="navigation" class="p-nav"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;a href="#navbar"&gt;Home&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#navbar"&gt;Work &amp;dtrif;&lt;/a&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;a href="#navbar"&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#navbar"&gt;Web Design&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#navbar"&gt;Illustration&lt;/a&gt;&lt;/li&gt;
+			&lt;li&gt;&lt;a href="#navbar"&gt;Iconography&lt;/a&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#navbar"&gt;About&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="#navbar"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="tables">
+				<h4 class="title">Tables</h5>
+
+				<div class="example">
+					<table>
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Born</th>
+								<th>Location</th>
+								<th>Song</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Johann Sebastian Bach</td>
+								<td>March 31, 1685</td>
+								<td>Germany</td>
+								<td>Air auf der G-Saite</td>
+							</tr>
+							<tr>
+								<td>Frédéric Chopin</td>
+								<td>1 March, 1810</td>
+								<td>Duchy of Warsaw</td>
+								<td>Étude Op. 10, No. 3</td>
+							</tr>
+							<tr>
+								<td>Wilhelm Richard Wagner</td>
+								<td>22 May, 1813</td>
+								<td>Königreich Sachsen</td>
+								<td>Die Walküre</td>
+							</tr>
+							<tr>
+								<td>Carl August Nielsen</td>
+								<td>9 June, 1865</td>
+								<td>Danmark</td>
+								<td>Det Uudslukkelige</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<pre><code>
+&lt;table&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Name&lt;/th&gt;
+			&lt;th&gt;Born&lt;/th&gt;
+			&lt;th&gt;Location&lt;/th&gt;
+			&lt;th&gt;Song&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Johann Sebastian Bach&lt;/td&gt;
+			&lt;td&gt;March 31, 1685&lt;/td&gt;
+			&lt;td&gt;Germany&lt;/td&gt;
+			&lt;td&gt;Air auf der G-Saite&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Frédéric Chopin&lt;/td&gt;
+			&lt;td&gt;1 March, 1810&lt;/td&gt;
+			&lt;td&gt;Duchy of Warsaw&lt;/td&gt;
+			&lt;td&gt;Étude Op. 10, No. 3&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Wilhelm Richard Wagner&lt;/td&gt;
+			&lt;td&gt;22 May, 1813&lt;/td&gt;
+			&lt;td&gt;Königreich Sachsen&lt;/td&gt;
+			&lt;td&gt;Die Walküre&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Carl August Nielsen&lt;/td&gt;
+			&lt;td&gt;9 June, 1865&lt;/td&gt;
+			&lt;td&gt;Danmark&lt;/td&gt;
+			&lt;td&gt;Det Uudslukkelige&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+&lt;/table&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="grid">
+				<h4 class="title">Grid</h5>
+				Simple Grid.
+				The display here is crafted to make it easier to see.
+				<div class="example-grid">
+					<div class="row">
+						<div class="1 col">1 col</div>
+						<div class="11 col">11 col</div>
+					</div>
+					<div class="row">
+						<div class="2 col">2 col</div>
+						<div class="10 col">10 col</div>
+					</div>
+					<div class="row">
+						<div class="3 col">3 col</div>
+						<div class="9 col">9 col</div>
+					</div>
+					<div class="row">
+						<div class="4 col">4 col</div>
+						<div class="8 col">8 col</div>
+					</div>
+					<div class="row">
+						<div class="5 col">5 col</div>
+						<div class="7 col">7 col</div>
+					</div>
+					<div class="row">
+						<div class="6 col">6 col</div>
+						<div class="6 col">6 col</div>
+					</div>
+					<div class="row">
+						<div class="6 col">
+							Left side sentence.
+						</div>
+						<div class="6 col">
+							Right side sentence.
+						</div>
+					</div>
+				</div>
+				<pre><code>
+&lt;div class="row"&gt;
+	&lt;div class="3 col"&gt;3 col&lt;/div&gt;
+	&lt;div class="9 col"&gt;9 col&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="6 col"&gt;
+		Left side sentence.
+	&lt;/div&gt;
+	&lt;div class="6 col"&gt;
+		Right side sentence.
+	&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+			</section>
+
+			<br>
+
+			<section class="c" id="code">
+				<h4 class="title">Code</h5>
+				<div class="example">
+				  <pre><code>
+.Duh {
+	color: #ff80ab;
+}
+				</code></pre>
+				<pre><code>
+&lt;pre&gt;&lt;code&gt;
+.Duh {
+	color: #ff80ab;
+}
+&lt;/code&gt;&lt;/pre&gt;
+			  </code></pre>
+				</div>
+			</section>
+
+			<br>
+
+			<section class="c" id="cards">
+				<h4 class="title">Cards</h5>
+				<p>Cards can be used to display info in a concise and consistent manner. </p>
+				<div class="card">
+					<h4>Simple Card</h4>
+					<p>Here is some text that generally describes the card, or something about it.</p>
+					<button class="btn">Okay</button>
+					<button class="btn primary">Cancel</button>
+				</div>
+				<pre><code>
+&lt;div class=&quot;card&quot;&gt;
+	&lt;h4&gt;Simple Card&lt;/h4&gt;
+	&lt;p&gt;Here is some text that generally describes the card, or something about it.&lt;/p&gt;
+	&lt;button class=&quot;btn&quot;&gt;Okay&lt;/button&gt;
+	&lt;button class=&quot;btn primary&quot;&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+				</code></pre>
+				<p>Cards are usually nested within grids to create powerful display systems, like below.</p>
+				<div class="row">
+					<div class="card col">
+						<img src="https://picsum.photos/400/300/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+					<div class="card col">
+						<img src="https://picsum.photos/400/301/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+				</div>
+				<p>You can also easily nest images within cards.</p>
+				<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;card col&quot;&gt;
+		&lt;img src=&quot;https://picsum.photos/400/300/?random&quot; class=&quot;w-100&quot;&gt;
+		&lt;h4&gt;Card Title&lt;/h4&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. &lt;/p&gt;
+		&lt;button class=&quot;btn&quot;&gt;Okay&lt;/button&gt;
+		&lt;button class=&quot;btn primary&quot;&gt;Cancel&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;card col&quot;&gt;
+		&lt;img src=&quot;https://picsum.photos/400/301/?random&quot; class=&quot;w-100&quot;&gt;
+		&lt;h4&gt;Card Title&lt;/h4&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+		Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. &lt;/p&gt;
+		&lt;button class=&quot;btn&quot;&gt;Okay&lt;/button&gt;
+		&lt;button class=&quot;btn primary&quot;&gt;Cancel&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+				</code></pre>
+				<div class="row">
+					<div style="width: 30.0em;" class="card col">
+						<img src="https://picsum.photos/400/310/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+					<div style="width: 30.0em;"  class="card col">
+						<img src="https://picsum.photos/400/311/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+					<div style="width: 100%;">
+					</div>
+				</div>
+				<p>You can also specification cards width.</p>
+				<p>The last div settings is important.</p>
+				<pre><code>
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div style="width: 30.0em;" class=&quot;card col&quot;&gt;
+		&lt;img src=&quot;https://picsum.photos/400/310/?random&quot; class=&quot;w-100&quot;&gt;
+		&lt;h4&gt;Card Title&lt;/h4&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. &lt;/p&gt;
+		&lt;button class=&quot;btn&quot;&gt;Okay&lt;/button&gt;
+		&lt;button class=&quot;btn primary&quot;&gt;Cancel&lt;/button&gt;
+	&lt;/div&gt;
+	&lt;div style="width: 30.0em;" class=&quot;card col&quot;&gt;
+		&lt;img src=&quot;https://picsum.photos/400/311/?random&quot; class=&quot;w-100&quot;&gt;
+		&lt;h4&gt;Card Title&lt;/h4&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+		Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. &lt;/p&gt;
+		&lt;button class=&quot;btn&quot;&gt;Okay&lt;/button&gt;
+		&lt;button class=&quot;btn primary&quot;&gt;Cancel&lt;/button&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div style="width: 100%;"&gt;
+&lt;/div&gt;
+				</code></pre>
+
+			</section>
+
+			<section class="c" id="other">
+				<h4 class="title">Other</h4>
+				<h5>Horizontal Rules</h5>
+    <p>Horizontal Rules are useful for dividing up content. They add a splash of color as well!</p>
+    <hr>
+    <pre><code>&lt;hr&gt;</code></pre>
+    <h5>Utility</h5>
+    <p>The only utility class is w-100, which simply sets an element to take up full width. Responsive items that should use this are inputs, images, and tables.</p>
+			</section>
+		</main>
+	</body>
+</html>
