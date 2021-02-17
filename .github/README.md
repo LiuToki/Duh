@@ -23,8 +23,7 @@ Add to compilerOptions code block in package.json
 Maybe...Maybe...
 
 ## Download
-https://github.com/LiuToki/Duh/archive/master.zip
-
+https://github.com/LiuToki/Duh/archive/0.1.0.zip
 
 # License
 Designed with LiuToki. Licensed under the MIT License.
