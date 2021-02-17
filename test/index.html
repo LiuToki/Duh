@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="author" content="LiuToki" />
+		<meta
+		name="description"
+		content="Duh provides a minimal setup of styles for a fast and clean starting point. Specially designed for better performance and higher productivity with fewer properties to reset resulting in cleaner code."
+		/>
+		<title>Duh 🍠</title>
+		<link rel="stylesheet" href="duh.css" />
+		<style>
+		.example-grid .row {
+			/*stolen from skeleton for the time being*/
+			text-align: center;
+			font-size: .8em;
+			letter-spacing: .1rem;
+			margin: .8em 0;
+		}
+	
+		.example-grid .col {
+			background: #EEE;
+			padding: .3em;
+		}
+		</style>
+		<!-- to generate this style run `$ npm start` -->
+	</head>
+	<body>
+		<main>
+			<section class="c">
+				<h1>Duh 🍠</h1>
+			</section>
+
+			<section class="c" id="typography">
+				<h5 class="title">Typography</h5>
+				<hr />
+				<div class="example">
+					<div class="row">
+						<h1>
+						Heading<span>
+							<code>&lt;h1&gt;</code> 4.6rem (46px)</span
+						>
+						</h1>
+						<h2>
+						Heading<span>
+							<code>&lt;h2&gt;</code> 3.6rem (36px)</span
+						>
+						</h2>
+						<h3>
+						Heading<span>
+							<code>&lt;h3&gt;</code> 2.8rem (28px)</span
+						>
+						</h3>
+						<h4>
+						Heading<span>
+							<code>&lt;h4&gt;</code> 2.2rem (22px)</span
+						>
+						</h4>
+						<h5>
+						Heading<span>
+							<code>&lt;h5&gt;</code> 1.8rem (18px)</span
+						>
+						</h5>
+						<h6>
+						Heading<span>
+							<code>&lt;h6&gt;</code> 1.6rem (16px)</span
+						>
+						</h6>
+					</div>
+				</div>
+			</section>
+
+			<section class="c" id="blockquotes">
+				<h5 class="title">Blockquotes</h5>
+				<hr />
+				<div class="example">
+					<div class="row">
+						<p><q>Yeah!! Duh is amazing.</q></p>
+						<blockquote>
+						<p><em>Yeah!! Duh is amazing.</em></p>
+						</blockquote>
+					</div>
+				</div>
+			</section>
+
+			<section class="c" id="buttons">
+				<h5 class="title">Buttons</h5>
+				<hr />
+				<div class="example">
+					<div class="row">
+					<div class="column">
+						<a class="button" href="#buttons">Default Button</a>
+						<a class="button button-outline" href="#buttons"
+						>Outlined Button</a
+						>
+						<a class="button button-clear" href="#buttons"
+						>Clear Button</a
+						>
+						<a class="button" disabled href="#buttons"
+						>Default Button</a
+						>
+						<a
+						class="button button-outline"
+						disabled
+						href="#buttons"
+						>Outlined Button</a
+						>
+						<a class="button button-clear" disabled href="#buttons"
+						>Clear Button</a
+						>
+					</div>
+					<div class="column">
+						<button class="button">Default Button</button>
+						<button class="button button-outline">Outlined Button</button>
+						<button class="button button-clear">Clear Button</button>
+						<button class="button" disabled>Default Button</button>
+						<button class="button button-outline" disabled>
+						Outlined Button
+						</button>
+						<button class="button button-clear" disabled>Clear Button</button>
+					</div>
+					<div class="column">
+						<input class="button" type="submit" value="Default Button" />
+						<input
+						class="button button-outline"
+						type="submit"
+						value="Outlined Button"
+						/>
+						<input
+						class="button button-clear"
+						type="submit"
+						value="Clear Button"
+						/>
+						<input
+						class="button"
+						disabled
+						type="submit"
+						value="Default Button"
+						/>
+						<input
+						class="button button-outline"
+						disabled
+						type="submit"
+						value="Outlined Button"
+						/>
+						<input
+						class="button button-clear"
+						disabled
+						type="submit"
+						value="Clear Button"
+						/>
+					</div>
+					</div>
+					<div class="row">
+					<div class="column">
+						<input class="button" type="reset" value="Default Button" />
+						<input
+						class="button button-outline"
+						type="reset"
+						value="Outlined Button"
+						/>
+						<input
+						class="button button-clear"
+						type="reset"
+						value="Clear Button"
+						/>
+						<input
+						class="button"
+						disabled
+						type="reset"
+						value="Default Button"
+						/>
+						<input
+						class="button button-outline"
+						disabled
+						type="reset"
+						value="Outlined Button"
+						/>
+						<input
+						class="button button-clear"
+						disabled
+						type="reset"
+						value="Clear Button"
+						/>
+					</div>
+					<div class="column">
+						<input class="button" type="button" value="Default Button" />
+						<input
+						class="button button-outline"
+						type="button"
+						value="Outlined Button"
+						/>
+						<input
+						class="button button-clear"
+						type="button"
+						value="Clear Button"
+						/>
+						<input
+						class="button"
+						disabled
+						type="button"
+						value="Default Button"
+						/>
+						<input
+						class="button button-outline"
+						disabled
+						type="button"
+						value="Outlined Button"
+						/>
+						<input
+						class="button button-clear"
+						disabled
+						type="button"
+						value="Clear Button"
+						/>
+					</div>
+					<div class="column">
+						<div class="button">Default Button</div>
+						<div class="button button-outline">Outlined Button</div>
+						<div class="button button-clear">Clear Button</div>
+						<div class="button" disabled>Default Button</div>
+						<div class="button button-outline" disabled>Outlined Button</div>
+						<div class="button button-clear" disabled>Clear Button</div>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="c" id="lists">
+				<h5 class="title">Lists</h5>
+				<hr />
+				<div class="example">
+				  <div class="row">
+					<div class="column">
+					  <ul>
+						<li>Unordered list item 1</li>
+						<li>Unordered list item 2</li>
+						<li>
+						  Unordered list item 3
+						  <ul>
+							<li>Unordered list item 3.1</li>
+							<li>Unordered list item 3.2</li>
+							<li>Unordered list item 3.3</li>
+						  </ul>
+						</li>
+						<li>Unordered list item 4</li>
+						<li>Unordered list item 5</li>
+					  </ul>
+					</div>
+					<div class="column">
+					  <ol>
+						<li>Ordered list item 1</li>
+						<li>Ordered list item 2</li>
+						<li>
+						  Ordered list item 3
+						  <ol>
+							<li>Ordered list item 3.1</li>
+							<li>Ordered list item 3.2</li>
+							<li>Ordered list item 3.3</li>
+						  </ol>
+						</li>
+						<li>Ordered list item 4</li>
+						<li>Ordered list item 5</li>
+					  </ol>
+					</div>
+				  </div>
+				</div>
+			</section>
+
+			<section class="c" id="navbar">
+				<h5 class="title">Navbar</h5>
+				<hr />
+				<nav role="navigation" class="p-nav">
+					<ul>
+					  <li><a href="#navbar">Home</a></li>
+					  <li><a href="#navbar">Work &dtrif;</a>
+						<ul>
+						  <li><a href="#navbar">Web Development</a></li>
+						  <li><a href="#navbar">Web Design</a></li>
+						  <li><a href="#navbar">Illustration</a></li>
+						  <li><a href="#navbar">Iconography</a></li>
+						</ul>
+					  </li>
+					  <li><a href="#navbar">About</a></li>
+					  <li><a href="#navbar">Contact</a></li>
+					</ul>
+				  </nav>
+			</section>
+
+			<section class="c" id="tables">
+				<h5 class="title">Tables</h5>
+				<hr />
+				<div class="example">
+				  <table>
+					<thead>
+					  <tr>
+						<th>Name</th>
+						<th>Born</th>
+						<th>Location</th>
+						<th>Song</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<td>Johann Sebastian Bach</td>
+						<td>March 31, 1685</td>
+						<td>Germany</td>
+						<td>Air auf der G-Saite</td>
+					  </tr>
+					  <tr>
+						<td>Frédéric Chopin</td>
+						<td>1 March, 1810</td>
+						<td>Duchy of Warsaw</td>
+						<td>Étude Op. 10, No. 3</td>
+					  </tr>
+					  <tr>
+						<td>Wilhelm Richard Wagner</td>
+						<td>22 May, 1813</td>
+						<td>Königreich Sachsen</td>
+						<td>Die Walküre</td>
+					  </tr>
+					  <tr>
+						<td>Carl August Nielsen</td>
+						<td>9 June, 1865</td>
+						<td>Danmark</td>
+						<td>Det Uudslukkelige</td>
+					  </tr>
+					</tbody>
+				  </table>
+				</div>
+			</section>
+	
+
+			<section class="c" id="grid">
+				<h5 class="title">Grid</h5>
+				<hr />
+				<div class="example-grid">
+					<div class="row">
+						<div class="1 col">1 col</div>
+						<div class="11 col">11 col</div>
+					</div>
+					<div class="row">
+						<div class="2 col">2 col</div>
+						<div class="10 col">10 col</div>
+					</div>
+					<div class="row">
+						<div class="3 col">3 col</div>
+						<div class="9 col">9 col</div>
+					</div>
+					<div class="row">
+						<div class="4 col">4 col</div>
+						<div class="8 col">8 col</div>
+					</div>
+					<div class="row">
+						<div class="5 col">5 col</div>
+						<div class="7 col">7 col</div>
+					</div>
+					<div class="row">
+						<div class="6 col">6 col</div>
+						<div class="6 col">6 col</div>
+					</div>
+					<div class="row">
+						<div class="6 col">
+							Left side sentence.
+						</div>
+						<div class="6 col">
+							Right side sentence.
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="c" id="code">
+				<h5 class="title">Code</h5>
+				<hr />
+				<div class="example">
+				  <pre><code>
+.Duh {
+	color: #ff80ab;
+}
+				</code></pre>
+				</div>
+			  </section>
+		
+			<section class="c" id="card">
+				<h5 class="title" id="cards">Cards</h5>
+				<hr />
+				<div class="card">
+					<h4>Simple Card</h4>
+					<p>Here is some text that generally describes the card, or something about it.</p>
+					<button class="btn">Okay</button>
+					<button class="btn primary">Cancel</button>
+				</div>
+				<div class="row">
+					<div class="card col">
+						<img src="https://picsum.photos/400/300/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+					<div class="card col">
+						<img src="https://picsum.photos/400/301/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+				</div>
+				<div class="row">
+					<div style="width: 30.0em;" class="card col">
+						<img src="https://picsum.photos/400/310/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+					<div style="width: 30.0em;"  class="card col">
+						<img src="https://picsum.photos/400/311/?random" class="w-100">
+						<h4>Card Title</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur adipisci, asperiores odit repellat, explicabo expedita atque aut illum. </p>
+						<button class="btn">Okay</button>
+						<button class="btn primary">Cancel</button>
+					</div>
+					<div style="width: 100%;">
+					</div>
+				</div>
+
+			</section>
+		</main>
+	</body>
+</html>
