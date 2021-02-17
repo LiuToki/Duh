@@ -1,6 +1,6 @@
 {
   "name": "duh",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A minimalist CSS framework.",
   "homepage": "https://github.com/LiuToki/Duh#readme",
   "main": "dist/duh.css",
