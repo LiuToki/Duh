@@ -1,6 +1,6 @@
 # Duh 🍠
 Duh!  
-This is the css for minimalist and peple that hate using javascript web site.
+This is the css for minimalist and people that hate using javascript web site.
 
 # Why use this framework
 Duh is fast and clean starting point.  
