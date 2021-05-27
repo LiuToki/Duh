@@ -2,6 +2,9 @@
 Duh!  
 This is the css for minimalist and people that hate using javascript web site.
 
+Look at this.
+https://liutoki.github.io/Duh/
+
 # Why use this framework
 Duh is fast and clean starting point.  
 Only 2kb gzipped is friendly to user internet communication charges.  
