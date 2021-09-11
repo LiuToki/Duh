@@ -20,7 +20,7 @@ Add to compilerOptions code block in package.json
 ```
 ## CSS3
 ```
-<link rel="stylesheet" href="https://github.com/LiuToki/Duh/blob/master/dist/duh.css" />
+<link rel="stylesheet" href="https://liutoki.github.io/Duh/dist/duh.css" />
 ```
 
 Maybe...Maybe...
